@@ -1,0 +1,34 @@
+.navbar {
+    padding: 0rem 1.2rem;
+    color: whitesmoke;
+    @media (min-width: 768px) {
+        padding: 0rem 5rem;
+      }
+}
+
+.navbar-brand{
+    font-weight: 400;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.nav-items{
+    display:flex;
+    justify-content:flex-end;
+    color: whitesmoke;
+    margin-right: 0rem;
+    @media (min-width: 768px) {
+        margin-right: 12rem;
+    }
+}
+
+.navbar-nav {
+    gap: 3rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+
+.nav-item  {
+    color: whitesmoke;
+}

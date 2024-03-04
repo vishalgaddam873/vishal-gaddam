@@ -1,0 +1,163 @@
+/* Existing styles */
+
+.main-container {
+  display: flex;
+  /* background: linear-gradient(178.1deg, rgb(60, 55, 106) 8.5%, rgb(23, 20, 69) 82.4%); */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column; /* Updated for smaller screens */
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.top-left-container {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top:-4rem;
+  padding: 0rem 1.3rem;
+  @media (min-width: 768px) {
+    top:0rem;
+    padding: 0rem 5rem;
+  }
+}
+
+.description {
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-top: 3%;
+  text-align: justify;
+  @media (min-width: 768px) {
+    font-size: 1.5em;
+    font-weight: 200;
+   
+  }
+}
+
+/* Add media query for the wave animation, if needed */
+
+.display-5 {
+  font-size: 1.5em;
+  font-weight: 500;
+  
+  @media (min-width: 768px) {
+    font-size: 3em;
+    font-weight: 500;
+  }
+}
+
+/* Add media query for the description, if needed */
+
+.top-right-container {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  @media (max-width: 767px) {
+    order: -1; /* Move the profile pic container to the top */
+    margin-bottom: 20px; /* Add some spacing between profile pic and text */
+    
+  }
+}
+
+.profile-pic {
+  width: 40%;
+  border-radius: 200px;
+
+  @media (max-width: 767px) {
+    width: 60%;
+  }
+}
+
+/* Existing styles */
+
+.wave-emoji {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+
+  @media (max-width: 767px) {
+    margin-top: 20px; /* Adjust as needed for spacing */
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0.0deg)
+  }
+
+  10% {
+    transform: rotate(14.0deg)
+  }
+
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8.0deg)
+  }
+
+  30% {
+    transform: rotate(14.0deg)
+  }
+
+  40% {
+    transform: rotate(-4.0deg)
+  }
+
+  50% {
+    transform: rotate(10.0deg)
+  }
+
+  60% {
+    transform: rotate(0.0deg)
+  }
+
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0.0deg)
+  }
+}
+
+/* Add media query for the moving hand, if needed */
+
+.moving-hand{
+  height: 3rem; 
+  width: 3rem; 
+  margin: 0px 0.05em 0px 0.1em; 
+  vertical-align: -0.1em;
+
+  @media (max-width: 767px) {
+      height: 1.5rem; 
+      width: 1.5rem; 
+  }
+}
+
+.contact-button {
+  width: 13rem;
+  height: 4rem;
+  font-weight: 500;
+  color: whitesmoke;
+  background-color:slategrey;
+  border-radius: 12rem;
+  border: 0px;
+  font-size: 1.4rem;
+  @media (min-width: 767px) {
+    margin: 2rem 0rem;
+  }
+}
+
+/* Existing styles */
+

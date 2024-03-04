@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #0d0636; /* For browsers that do not support gradients */
+    background: linear-gradient(178.1deg, rgb(60, 55, 106) 8.5%, rgb(23, 20, 69) 82.4%);
+    overflow: hidden;
+    color: white;
+    overflow-y: scroll;
+}
+
