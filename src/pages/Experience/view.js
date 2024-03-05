@@ -29,7 +29,7 @@ export default (props) => (
 						<div>
 							<h4>{item.companyName}</h4>
 							<h6>{item.timeline}</h6>
-							<p>{item.workDescription}</p>
+							{/* <p>{item.workDescription}</p> */}
 							<ul>
 								{item.workPointers.map((pointer) => (
 									<li>{pointer}</li>

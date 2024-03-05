@@ -7,13 +7,13 @@
     }
 }
 
-
 .experience-top-container {
     flex: 0.1;
     width: 100%;
     padding-left: 2rem;
     padding-top: 2rem;
 }
+
 .experience-title {
     font-size: 2.5rem;
     font-weight: 500;
@@ -32,10 +32,13 @@
 
 
 .experience-left-container {
-    flex:1;
+    flex:0.4;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    @media (max-width: 768px) {
+        flex:1;
+    }
 }
 
 .skill-pic {
@@ -49,7 +52,7 @@
 }
 
 .experience-right-container {
-    flex:1;
+    flex:0.6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +61,7 @@
     padding: 1rem;
     @media (max-width: 768px) {
         padding: 1rem 0rem;
-       
+        flex:1;
     }
 }
 

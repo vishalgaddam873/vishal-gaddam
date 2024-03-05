@@ -67,7 +67,6 @@
 .about-card-container {
     display: flex;
     width: 80%;
-    /* justify-content: center; */
     align-items: center;
     padding: 1rem;
     gap:1rem;
