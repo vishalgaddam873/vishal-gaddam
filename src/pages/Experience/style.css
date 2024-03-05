@@ -1,0 +1,81 @@
+.experience-main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 3rem;
+    @media (max-width: 768px) {
+        padding: 1rem; 
+    }
+}
+
+
+.experience-top-container {
+    flex: 0.1;
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+.experience-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    @media (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+}
+
+.experience-bottom-container { 
+    flex:0.9;
+    display: flex;
+    padding: 0rem 1rem ;
+    flex-wrap: wrap;
+}
+
+
+
+.experience-left-container {
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-pic {
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem ;
+    @media (max-width: 768px) {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.experience-right-container {
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:3rem;
+    padding: 1rem;
+    @media (max-width: 768px) {
+        padding: 1rem 0rem;
+       
+    }
+}
+
+.history-card { 
+    width: 90%;
+    display: flex;
+    gap:1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(54, 44, 91), rgba(29, 26, 66, 0.058));
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+.history-pic { 
+    width: 5rem;
+    height: 5rem;
+}
+

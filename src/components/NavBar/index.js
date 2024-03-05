@@ -3,7 +3,7 @@ import logoImage from '../../assets/images/logo.png';
 
 const NavBar = (prop) => (
 	<>
-		<nav className='navbar navbar-expand-lg'>
+		<nav className='navbar navbar-expand-lg fixed-top'>
 			<a className='navbar-brand' href='#'>
 				{/* <img
 					src={logoImage}

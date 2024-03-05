@@ -1,31 +1,32 @@
-/* Existing styles */
-
 .main-container {
   display: flex;
-  /* background: linear-gradient(178.1deg, rgb(60, 55, 106) 8.5%, rgb(23, 20, 69) 82.4%); */
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 3rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  @media (max-width: 768px) {
+    padding: 0rem 1rem; 
+    padding-top: 3rem;
+  }
 }
 
 .top-container {
   display: flex;
-  flex-direction: column; /* Updated for smaller screens */
-  @media (min-width: 768px) {
-    flex-direction: row;
+  flex-direction: row; /* Updated for smaller screens */
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 }
 
 .top-left-container {
-  flex: 0.6;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  position: relative;
-  top:-4rem;
-  padding: 0rem 1.3rem;
-  @media (min-width: 768px) {
-    top:0rem;
-    padding: 0rem 5rem;
+  padding: 1rem 1rem;
+  @media (max-width: 768px) {
+    padding-top: 0rem; 
   }
 }
 
@@ -37,7 +38,6 @@
   @media (min-width: 768px) {
     font-size: 1.5em;
     font-weight: 200;
-   
   }
 }
 
@@ -56,24 +56,22 @@
 /* Add media query for the description, if needed */
 
 .top-right-container {
-  flex: 0.5;
+  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1rem;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     order: -1; /* Move the profile pic container to the top */
     margin-bottom: 20px; /* Add some spacing between profile pic and text */
-    
+    align-items: center;
+    justify-content: center;
   }
 }
 
 .profile-pic {
-  width: 40%;
-  border-radius: 200px;
-
-  @media (max-width: 767px) {
-    width: 60%;
+  width: 70%;
+  border-radius: 50rem;
+  @media (max-width: 768px) {
+    width: 80%;
   }
 }
 
