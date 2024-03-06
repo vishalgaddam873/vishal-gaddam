@@ -3,7 +3,6 @@
     color: whitesmoke;
     background-color: #0d0636;
     background-image: linear-gradient(to right,   rgba(45, 9, 65, 0), rgb(67, 56, 82));
-    
     @media (min-width: 768px) {
         padding: 0rem 5rem;
         
