@@ -15,7 +15,7 @@ const NavBar = () => (
 				<FontAwesomeIcon icon={faCode} size='2x' />
 				<a className='navbar-brand'> Vishal G.</a>
 			</Link>
-			<button
+			{/* <button
 				className='navbar-toggler'
 				type='button'
 				data-bs-toggle='collapse'
@@ -24,7 +24,7 @@ const NavBar = () => (
 				aria-expanded='false'
 				aria-label='Toggle navigation'>
 				<span className='navbar-toggler-icon'></span>
-			</button>
+			</button> */}
 			<div className='nav-items collapse navbar-collapse' id='navbarNavAltMarkup'>
 				<div className='navbar-nav'>
 					<Link
