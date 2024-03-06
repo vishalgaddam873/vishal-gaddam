@@ -38,7 +38,7 @@ const ExperiencePage = () => {
 				},
 				{
 					companyLogo: EmediSkillLogo,
-					companyName: 'EmediSkill.com (Teach Lead - Freelancer)',
+					companyName: 'EmediSkill.com (Tech Lead - Freelancer)',
 					timeline: 'Sep 2023 - Present',
 					workDescription:
 						'Responsible for leading a team and overseeing the development of EmediSkill web platform.',
