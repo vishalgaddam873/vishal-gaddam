@@ -1,23 +1,25 @@
 import './style.css';
-import logoImage from '../../assets/images/logo.png';
-
-const NavBar = (prop) => (
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+const NavBar = () => (
 	<>
 		<nav className='navbar navbar-expand-lg fixed-top'>
-			<a className='navbar-brand' href='#'>
-				{/* <img
-					src={logoImage}
-					alt='Portfolio'
-					width='200'
-					class='d-inline-block align-text-top'
-				/> */}
-				Portfolio
-			</a>
+			<Link
+				to='home'
+				spy={true}
+				smooth={true}
+				offset={-70}
+				duration={100}
+				className='nav-link'>
+				<FontAwesomeIcon icon={faCode} size='2x' />
+				<a className='navbar-brand'> Vishal G.</a>
+			</Link>
 			<button
 				className='navbar-toggler'
 				type='button'
-				data-toggle='collapse'
-				data-target='#navbarNavAltMarkup'
+				data-bs-toggle='collapse'
+				data-bs-target='#navbarNavAltMarkup'
 				aria-controls='navbarNavAltMarkup'
 				aria-expanded='false'
 				aria-label='Toggle navigation'>
@@ -25,21 +27,51 @@ const NavBar = (prop) => (
 			</button>
 			<div className='nav-items collapse navbar-collapse' id='navbarNavAltMarkup'>
 				<div className='navbar-nav'>
-					<a className='nav-item nav-link' href='#'>
-						About
-					</a>
-					<a className='nav-item nav-link' href='#'>
-						Experience
-					</a>
-					<a className='nav-item nav-link' href='#'>
-						Projects
-					</a>
-					<a className='nav-item nav-link' href='#'>
-						Contact
-					</a>
-					<a className='nav-item nav-link' href='#'>
-						Hire Me
-					</a>
+					<Link
+						to='about'
+						spy={true}
+						smooth={true}
+						offset={-70}
+						duration={100}
+						className='nav-link'>
+						<a className='nav-item nav-link'>About</a>
+					</Link>
+					<Link
+						to='experience'
+						spy={true}
+						smooth={true}
+						offset={-70}
+						duration={100}
+						className='nav-link'>
+						<a className='nav-item nav-link'>Experience</a>
+					</Link>
+					<Link
+						to='projects'
+						spy={true}
+						smooth={true}
+						offset={-70}
+						duration={100}
+						className='nav-link'>
+						<a className='nav-item nav-link'>Projects</a>
+					</Link>
+					<Link
+						to='contact'
+						spy={true}
+						smooth={true}
+						offset={-70}
+						duration={100}
+						className='nav-link'>
+						<a className='nav-item nav-link'>Contact</a>
+					</Link>
+					{/* <Link
+						to='hireme'
+						spy={true}
+						smooth={true}
+						offset={-70}
+						duration={100}
+						className='nav-link'>
+						<a className='nav-item nav-link'>Hire Me</a>
+					</Link> */}
 				</div>
 			</div>
 		</nav>

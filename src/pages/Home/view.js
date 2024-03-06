@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 export default (props) => (
-	<section className='main-container'>
+	<section className='main-container' id='home'>
 		<div className='top-container'>
 			<div className='top-left-container'>
 				<h1 className='display-5 pt-5 title'>
@@ -17,7 +17,9 @@ export default (props) => (
 					</span>
 				</h1>
 				<p className='description'>{props.describe}</p>
-				<button className='contact-button'>Contact Me</button>
+				<button className='contact-button' onClick={props.scrollToBottom}>
+					Contact Me
+				</button>
 			</div>
 			<div className='top-right-container'>
 				<img

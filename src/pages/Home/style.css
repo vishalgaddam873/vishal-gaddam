@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
+  padding-top: 5rem;
   padding-right: 5rem;
   padding-left: 5rem;
   @media (max-width: 768px) {

@@ -14,8 +14,8 @@
     width: 95%;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 1rem;
+    padding-bottom: 3rem;
     @media (max-width: 768px) {
-        padding-bottom: 3rem;
         width: 100%; 
     }
 }

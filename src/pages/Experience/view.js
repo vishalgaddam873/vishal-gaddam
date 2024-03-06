@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 
 export default (props) => (
-	<section className='experience-main-container'>
+	<section className='experience-main-container' id='experience'>
 		<div className='experience-top-container'>
 			<h1 className='experience-title'>EXPERIENCE</h1>
 		</div>
